@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "keywords" content="Kushagr Sharma, Kushagr, Sharma, Engineer, Computer Science, Computer, Computer and Communication, Manipal Institute of Technology, Aspiring Web Developer">
+    <meta name = "author" content = "Kushagr Sharma">
+    <meta name = "viewport" content="width = device-width, initial-scale= 1.0">
+    <meta name = "description" content = "My portfolio">
+    <link rel ="stylesheet" href ="./styleAbout.css">
+    <title>
+      My Portfolio | About
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="container"><!contianer class only for the nav tag which is used throughout all pages to maintian the navigation>
+        <nav>
+          <ul>
+            <li><a href ="Index.html">Home</a></li>
+            <li><a href ="About.html">About</a></li>
+            <li><a href ="Videos.html">Videos</a></li>
+            <li><a href ="Contact.html">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper"><!wrapper class used for this page accordion and panel>
+    <br>
+    <button class="accordion"> Overview</button>
+    <div class ="panel">
+      <p>Having exposure of a cross-country education system, having the determination of a young dedicated student, and having the values of a good individual, I thrive for the best. I have many hobbies but the ones that I enjoy the most are creating and learning new things, playing the violin, and last but not the least, playing chess. Brought up in Minnesota, USA as a obdient boyscout I have ample knowledge in first-aid and wilderness survival and also proficent in other skills such as critical thinking and communication. Technically strong in certain domains have allowed me to learn as well as contribute in my 2.5 months long internship in cloud computing at Infrastack-Labs. I interest in all types of development ranging from open source development and aim to be a highly skilled full stack developer in the days to come.</p>
+    </div>
+    <button class="accordion"> Musician</button>
+    <div class ="panel">
+      <p>The school orchestra was a program which allowed us youngsters to take up a beautiful hobby. It was in the summer of third grade when I first laid my hands on a violin, something that would become one of my biggest compainions. Initially not having much interest in learning the instrument I stuck with it and as I got to seventh grade I found a private tutor who changed my whole perception of music. Thanks to him, I developed a profound interest in the instrument. To this day I enjoy playing and learning new skills, techniques and songs. </p>
+    </div>
+    <button class="accordion"> Chess</button>
+    <div class ="panel">
+      <p>
+        Chess is something that I picked up when I was just 7 years old. I was always keen to look for new strategies that would make me win. Being the youngest player in my school, I was the best by the age of 9. Playing in a few Junior High National Championships, I placed 8th in one of these national competations and have won over 25 trophies over many regional competations. Till today I continue to play chess and being a member of the Manipal Institute of Technology college team and Manipal University university team and have also helped lay roots to a new chess club in Manipal.
+      </p>
+    </div>
+    <button class="accordion"> Developer</button><!marker:start copying from here till next comment if you need to add anything else on your about page>
+    <div class ="panel">
+      <p>I don't have very much expereince with development. Nevertheless I am very interested to create something out of nothing. The very idea of creating something new which can benefit the society is the soul motivation that I require to aspire new heights in this domain. I continue to learn in my free time and I am currently working on a freelance project that will really give me a feel for the real-world requirement of clients.
+      </p>
+    </div><!marker ends>
+  </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      //checking for all elements in the class accordion, that is, all of the headings that pose as drop dowms
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function()//for event click
+        {
+          this.classList.toggle("active");
+          var panel1 = this.nextElementSibling;
+          if (panel1.style.maxHeight)
+          {
+            panel1.style.maxHeight = null;
+          }
+          else
+          {
+            panel1.style.maxHeight = panel1.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>

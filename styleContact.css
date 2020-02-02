@@ -1,0 +1,97 @@
+/*body*/
+body{
+  font:arial;
+  background:linear-gradient(-45deg,#0b485b, #f56215, #2196f3, #8e1600, #fff);
+  background-size:800% 1000%;
+  animation: gradient 7s ease infinite;
+
+}
+/*navigation*/
+header li{
+  display: inline;
+  padding :0 20px 0 20px;
+  font-size: 20px;
+}
+header a{
+  text-decoration: none;
+  color:#fff;
+}
+header a:hover{
+  color:black;
+}
+/*form*/
+.contact-title{
+  margin-top:100px;
+  color:#fff;
+  text-transform: uppercase;
+  transition :all 2s ease-in-out;
+    text-align: center;
+}
+.contact-title h1{
+  font-size:32px;
+
+}
+.contact-title h2{
+  font-size:16px;
+}
+.container li{
+  display: inline;
+  padding :0 20px 0 20px;
+  font-size: 20px;
+}
+.container a{
+  text-decoration: none;
+  color:#fff;
+}
+.container a:hover{
+  color:black;
+}
+form{
+  margin-top: :50px;
+  transition:all 4s ease-in-out;
+    text-align: center;
+}
+
+.form-control{
+  width:600px;
+  background:transparent;
+  border:none;
+  outline:none;
+  border-bottom: 1px solid gray;
+  color:#fff;
+  font-size:18px;
+  margin-bottom: :16px;
+
+}
+input{
+  height:45px;
+}
+form .submit
+{
+  background-color: black;
+  border-color:transparent;
+  color:white;
+  font-size:20px;
+  margin-top:20px;
+    text-align: center;
+}
+form .submit:hover
+{
+  background-color: green;
+  font-weight: bold;
+}
+/*animation*/
+@keyframes gradient {
+  0%
+  {
+    background-position: 0% 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}

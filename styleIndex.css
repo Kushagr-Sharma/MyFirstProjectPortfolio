@@ -1,0 +1,56 @@
+/*body*/
+body{
+  font:arial;
+  width:100%;
+  height:100%;
+  background:linear-gradient(-45deg,#0b485b, #f56215, #2196f3, #8e1600, #fff);
+  background-size:800% 1000%;
+  animation: gradient 7s ease infinite;
+}
+/*name*/
+h1{
+  margin-top:2%;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: overline;
+  font-size: 50px;
+  text-decoration-color: #fff;
+}
+/*navigation*/
+header li{
+  display: inline;
+  padding :0 20px 0 20px;
+  font-size: 20px;
+}
+header a{
+  text-decoration: none;
+  color:#fff;
+}
+header a:hover{
+  color:black;
+}
+/*image*/
+img{
+  border-radius: 50%;
+  margin-top:8%;
+  margin-left :40%;
+}
+footer {
+  color:#fff;
+  margin-left:47%;
+}
+/*background animation*/
+@keyframes gradient {
+  0%
+  {
+    background-position: 0% 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}
